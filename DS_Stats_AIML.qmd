@@ -1,0 +1,681 @@
+---
+author: "Rob Daniels"
+format: 
+  revealjs:
+    transition: fade
+    center: true
+    self-contained: true
+    footer: "© 2025 R Daniels — Licensed under CC BY-SA 4.0"
+    includes:
+      in_header: license-meta.html
+editor: visual
+---
+
+## [Title slide]{style="display:none;"}
+
+::: {style="font-size: 1.5em; text-align: left;"}
+<strong>Data Science vs. Statistics vs. AI vs. Machine Learning: A Comparative Overview</strong>
+
+<br><br>
+
+[**Robert Daniels**]{style="font-size: 0.8em;"}
+
+[*Data Scientist and Statistician*]{style="font-size: 0.8em;"}
+:::
+
+::: notes
+-   High-level overview
+-   Intention is to clarify some of the concepts
+-   This is information I don't see readily and I hope will help cut through some of the confusion (and hype)
+-   Disclaimer: this presentation is based on my observations, experience, and understading. The concepts that I'll present are general and not absolute. There may be exceptions or counterexamples not covered.
+:::
+
+## License
+
+This presentation is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+Please give appropriate credit if you reuse or adapt this work.
+
+## Who I am
+
+Rob Daniels, MS, MPH, CPH
+
+Experience: 13+ years in applied statistics, data science, machine learning
+
+Former roles:
+
+-   Statistician at Harvard University
+-   Contractor statistician at Centers for Disease Control and Prevention (CDC)
+
+::: notes
+-   10 years in academics, 3 years at CDC
+-   At CDC: National Center for Endemic and Zoonotic Infectios Diseases, Division of Healthcare Quality Promotion
+:::
+
+## Overview
+
+-   Distinguish between AI, machine learning, data science, and statistics
+-   Distinguish statistical models (SM) vs. machine learning models (ML)
+-   Guidelines on when and how to apply SM vs. ML
+
+::: notes
+Learning objectives
+:::
+
+## AI vs. machine learning vs. data science vs. statistics
+
+## [Venn diagram]{style="display:none;"}
+
+::: {style="text-align: center;"}
+![](images/venn_diagram.png){align="center"}
+:::
+
+::: {style="font-size: 0.4em; line-height: 1.1; margin-top: 0.5em; color: #555;"}
+Morris et al. (2024). Current and future applications of artificial intelligence in surgery: implications for clinical practice and research. <em>Frontiers in Surgery, 11</em>. <a href="https://doi.org/10.3389/fsurg.2024.1393898" target="_blank">https://doi.org/10.3389/fsurg.2024.1393898</a>.
+:::
+
+::: notes
+-   Also belongs within deep learning: generative AI
+-   Example of AI that is not ML: Symbolic AI
+:::
+
+## Artificial intelligence (AI)
+
+:::: {style="font-size: 0.7em; line-height: 1.2;"}
+**Simulation of human intelligence** in machines that are programmed to think, learn, and make decisions
+
+<p class="fragment"; data-fragment-index="1">
+  <strong>Artificial narrow intelligence (ANI)</strong><br>
+  • “One-trick-pony” applications<br>
+  • E.g., smart speaker, self-driving car, web search
+</p>
+<p class="fragment"; data-fragment-index="2">
+  <strong>Generative AI</strong><br>
+  • More general-purpose uses<br>
+  • E.g., ChatGPT, Claude, Gemini, DeepSeek, DALL-E 2
+</p>
+
+::: {.fragment data-fragment-index="2" style="position: absolute; right: 3%; top: 30%; width: 30%; font-style: italic; font-size: 0.9em; background-color: #f5f5f5; padding: 7px; border-left: 3px solid #ccc; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);"}
+“You won’t lose your job to AI, but you may lose your job to someone who knows how to use AI”
+:::
+
+<p class="fragment" data-fragment-index="3">
+
+<strong>Agentic AI</strong><br> • More autonomous decisions/actions<br> • E.g., OpenAI’s Operator
+
+</p>
+
+<p class="fragment"; data-fragment-index="4">
+  <strong>Artificial general intelligence (AGI)</strong><br>
+  • Anything a human can do
+</p>
+::::
+
+::: {style="font-size: 0.4em; line-height: 1.1; margin-top: 0.5em; color: #555;"}
+Ng, A. (2021). What is AI? \[Video lecture\]. <em>AI for Everyone</em>. Coursera. <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank">https://www.coursera.org/learn/ai-for-everyone</a>
+:::
+
+## What is machine learning?
+
+["The science of getting computers to learn without being explicitly programmed"]{style="font-size: 0.8em; font-style: italic;"}
+
+:::::: {style="font-size: 0.7em; line-height: 1.3; display: flex; gap: 2em;"}
+::: {.fragment style="flex: 1;" data-fragment-index="1"}
+<strong>Supervised learning</strong><br> • Maps input to output: X → Y labels<br> • Classification, regression, neural networks<br>
+
+<em>Examples:</em><br> – X-ray image → tumor/no tumor<br> – Words → next word (LLM)
+:::
+
+::: {.fragment style="flex: 1;" data-fragment-index="2"}
+<strong>Unsupervised learning</strong><br> • No labels<br> • Clustering, anomaly detection, data reduction<br>
+
+<em>Examples:</em><br> – Customer segmentation<br> – Fraud detection
+:::
+
+::: {.fragment style="flex: 1;" data-fragment-index="3"}
+<strong>Reinforcement learning</strong><br> • Rewards and punishments guide learning<br>
+
+<em>Examples:</em><br> – Self-driving cars<br> – Robotics
+:::
+::::::
+
+## Deep learning {.smaller}
+
+::: {style="font-size: 0.75em; line-height: 1.3;"}
+<ul>
+
+<li class="fragment" data-fragment-index="1">
+
+Subset of machine learning using multi-layered neural networks to model complex patterns
+
+</li>
+
+<li class="fragment" data-fragment-index="2">
+
+Commonly used types of NN:
+
+</li>
+
+<ul>
+
+<li class="fragment" data-fragment-index="2">
+
+Recurrent neural networks (RNN) (natural language processing, speech recognition)
+
+</li>
+
+<li class="fragment" data-fragment-index="2">
+
+Generative adversarial networks (GANs) (image generation, style transfer)
+
+</li>
+
+<li class="fragment" data-fragment-index="2">
+
+Convolutional neural networks (CNNs) (image processing, object detection)
+
+</li>
+
+</ul>
+
+</ul>
+:::
+
+::: {.fragment style="margin-top: 0.2em; text-align: left;" data-fragment-index="3"}
+<img src="images/cnn_claude.png" style="width: 1000px; margin: 0 auto;"/>
+:::
+
+::: {.fragment style="font-size: 0.4em; line-height: 1.1; margin-top: 0.01em; text-align: left; color: #555; margin-left: auto; margin-right: auto;" data-fragment-index="3"}
+Convolutional neural network diagram created by Claude AI (Anthropic, 2025). <a href="https://claude.ai" target="_blank">https://claude.ai</a>.
+:::
+
+## [Data science vs. statistics]{style="display:none;"} {.smaller}
+
+<style>
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.18rem;
+  row-gap: 0.12rem;
+  align-items: start;
+  font-size: 0.8em;
+}
+
+/* two distinct header colors */
+.col-header {
+  color: #fff;
+  font-weight: 700;
+  padding: 0.1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+.col-header.ds-header { background: #b30000; }   /* red header for DS */
+.col-header.stats-header { background: #003366; }/* blue header for Stats */
+
+.row-title {
+  grid-column: 1 / -1;
+  font-weight: 700;
+  margin: 0;                 /* remove external margin */
+  padding: 0.08rem 0 0.06rem 0.18rem; /* very small vertical padding */
+  line-height: 1.05;
+}
+
+.cell {
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+
+/* light backgrounds for columns */
+.ds { background: #fce8e6; }   /* pale red */
+.stats { background: #e8f1fc; } /* pale blue */
+
+/* tighten lists inside cells */
+.cell ul { margin: 0; padding-left: 1.05rem; }
+.cell li { margin-bottom: 0.28rem; line-height: 1.2; }
+</style>
+
+:::::::::::::: compare
+<!-- column headers -->
+
+::: {.col-header .ds-header}
+Data Science
+:::
+
+::: {.col-header .stats-header}
+Statistics
+:::
+
+<!-- Row 1 -->
+
+::: {.row-title .fragment data-fragment-index="1"}
+Scope
+:::
+
+::: {.cell .ds .fragment data-fragment-index="1"}
+<ul>
+
+<li>Broader, multi-disciplinary</li>
+
+<li>Integrates computer science, data analysis, ML, data visualization, and domain knowledge</li>
+
+</ul>
+:::
+
+::: {.cell .stats .fragment data-fragment-index="1"}
+<ul>
+
+<li>Narrower; focused on theory and methods for collecting, analyzing, interpreting, and presenting data</li>
+
+<li>Emphasizes understanding relationships and uncertainty in data</li>
+
+</ul>
+:::
+
+<!-- Row 2 -->
+
+::: {.row-title .fragment data-fragment-index="2"}
+Core principles
+:::
+
+::: {.cell .ds .fragment data-fragment-index="2"}
+<ul>
+
+<li>Algorithm-based</li>
+
+<li>Prediction-focused</li>
+
+</ul>
+:::
+
+::: {.cell .stats .fragment data-fragment-index="2"}
+<ul>
+
+<li>Inference, hypothesis testing, estimation</li>
+
+<li>Rooted in probability and mathematical rigor</li>
+
+</ul>
+:::
+
+<!-- Row 3 -->
+
+::: {.row-title .fragment data-fragment-index="3"}
+Problem-solving approach
+:::
+
+::: {.cell .ds .fragment data-fragment-index="3"}
+<ul>
+
+<li>Exploratory, iterative</li>
+
+<li>Optimizing predictions</li>
+
+</ul>
+:::
+
+::: {.cell .stats .fragment data-fragment-index="3"}
+<ul>
+
+<li>Usually hypothesis-driven</li>
+
+<li>Emphasis on testing and validating assumptions</li>
+
+</ul>
+:::
+::::::::::::::
+
+(1/2)
+
+## [Data science vs. statistics continued]{style="display:none;"} {.smaller}
+
+<style>
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.18rem;
+  row-gap: 0.12rem;
+  align-items: start;
+  font-size: 0.8em;
+}
+
+/* two distinct header colors */
+.col-header {
+  color: #fff;
+  font-weight: 700;
+  padding: 0.1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+.col-header.ds-header { background: #b30000; }   /* red header for DS */
+.col-header.stats-header { background: #003366; }/* blue header for Stats */
+
+.row-title {
+  grid-column: 1 / -1;
+  font-weight: 700;
+  margin: 0;                 /* remove external margin */
+  padding: 0.08rem 0 0.06rem 0.18rem; /* very small vertical padding */
+  line-height: 1.05;
+}
+
+.cell {
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+
+/* light backgrounds for columns */
+.ds { background: #fce8e6; }   /* pale red */
+.stats { background: #e8f1fc; } /* pale blue */
+
+/* tighten lists inside cells */
+.cell ul { margin: 0; padding-left: 1.05rem; }
+.cell li { margin-bottom: 0.28rem; line-height: 1.2; }
+</style>
+
+:::::::::::::: compare
+<!-- column headers -->
+
+::: {.col-header .ds-header}
+Data Science
+:::
+
+::: {.col-header .stats-header}
+Statistics
+:::
+
+<!-- Row 1 -->
+
+::: {.row-title .fragment data-fragment-index="1"}
+Tools and techniques
+:::
+
+::: {.cell .ds .fragment data-fragment-index="1"}
+<ul>
+
+<li>More programming (e.g., Python, SQL)</li>
+
+<li>ML, deep learning, big data tools (e.g., Spark)</li>
+
+</ul>
+:::
+
+::: {.cell .stats .fragment data-fragment-index="1"}
+<ul>
+
+<li>Specialized statistical software (e.g., R, SAS, Stata, Mplus)</li>
+
+<li>Specialized methods (e.g., mixed modeling)</li>
+
+</ul>
+:::
+
+<!-- Row 2 -->
+
+::: {.row-title .fragment data-fragment-index="2"}
+Data
+:::
+
+::: {.cell .ds .fragment data-fragment-index="2"}
+<ul>
+
+<li>Large-scale</li>
+
+<li>Unstructured, semi-structured, and structured</li>
+
+</ul>
+:::
+
+::: {.cell .stats .fragment data-fragment-index="2"}
+<ul>
+
+<li>Primarily structured</li>
+
+<li>Smaller samples, well-defined study designs</li>
+
+</ul>
+:::
+
+<!-- Row 3 -->
+
+::: {.row-title .fragment data-fragment-index="3"}
+Applications
+:::
+
+::: {.cell .ds .fragment data-fragment-index="3"}
+<ul>
+
+<li>Tech industry, business intelligence</li>
+
+<li>Fraud detection, NLP, computer vision</li>
+
+</ul>
+:::
+
+::: {.cell .stats .fragment data-fragment-index="3"}
+<ul>
+
+<li>Clinical trials</li>
+
+<li>Survey analysis, data collection, risk modeling</li>
+
+</ul>
+:::
+::::::::::::::
+
+(2/2)
+
+## Statistics vs. machine learning
+
+## Inference vs. prediction {.smaller}
+
+<ul class="fragment" data-fragment-index="1">
+
+<li>
+
+Inference involves drawing conclusions about a population based on a sample of data; it is concerned with understanding relationships, estimating parameters, and testing hypotheses
+
+<ul>
+
+<li>Focuses on why something happens</li>
+
+<li>E.g., identifying which factors significantly impact disease risk</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="2">
+
+<li>
+
+Prediction refers to using a model to forecast future outcomes based on current or historical data
+
+<ul>
+
+<li>Focuses on what will happen</li>
+
+<li>E.g., predicting whether a patient will develop a disease given a set of health metrics</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="3">
+
+<li>Traditional statistical models are typically designed for inference and focus on interpretability but can do both inference and prediction</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="4">
+
+<li>Machine learning models optimize prediction and offer limited inference</li>
+
+</ul>
+
+## Statistical models vs. machine learning models
+
+<ul class="fragment" data-fragment-index="1">
+
+<li>Statistical models are probabilistic and explicitly consider uncertainty</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="2">
+
+<li>Statistical models start with preconceived structure and typically assume additivity of predictor effects when specifying the model</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="3">
+
+<li>Machine learning models are more empirical and allow for higher-order interactions that are not pre-specified; do not attempt to isolate the effect of any single variable</li>
+
+</ul>
+
+::: {style="font-size: 0.4em; line-height: 1.1; margin-top: 0.5em; color: #555;"}
+Harrell, Frank. (2018, April 30). Road map for choosing between statistical modeling and machine learning. <em>Statistical Thinking</em>. <a href="https://www.fharrell.com/post/stat-ml/" target="_blank">https://www.fharrell.com/post/stat-ml/</a>.
+:::
+
+::: notes
+-   SMs employ assumptions based on an underlying probabilistic theory
+-   SMs can have a tremendous amount of complexity
+-   ML models model the complex patterns and higher-order interactions in data in a “black box” fashion
+:::
+
+## When to use SM vs. ML {.smaller}
+
+<ul class="fragment" data-fragment-index="1">
+
+<li>ML may work best when overall prediction is the goal without being able to describe the impact of any one predictor</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="2">
+
+<li>ML requires large sample sizes (typically 200 events per candidate predictor)</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="3">
+
+<li>ML might work better for high signal-to-noise situations (e.g., visual and sound recognition)</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="4">
+
+<li>ML tends to work well when learning a simple concept</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="5">
+
+<li>
+
+ML tends to work poorly when:
+
+<ul>
+
+<li>Learning complex concepts from small amounts of data</li>
+
+<li>Performs on new types of data (data the model was not trained on)</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+::: {style="font-size: 0.4em; line-height: 1.1; margin-top: 0.5em; color: #555;"}
+Harrell, Frank. (2018, April 30). Road map for choosing between statistical modeling and machine learning. <em>Statistical Thinking</em>. <a href="https://www.fharrell.com/post/stat-ml/" target="_blank">https://www.fharrell.com/post/stat-ml/</a>.
+:::
+
+## Additional AI/ML considerations
+
+## AI/ML roles {.smaller}
+
+-   Data scientist
+-   ML engineer (also new: AI engineer)
+-   Data engineer
+    -   Organize and manage data, data access, security in a cost-effective way
+    -   Needed for project with large data (≥ TB)
+-   AI product manager
+-   Training resources:
+    -   Emphasis on concepts and algorithms not just specific AI implementations
+
+::: notes
+Can get started with MB, GB of data
+:::
+
+## One second rule {.smaller}
+
+|  |  |
+|----|----|
+| **What is it?** | <em>If a human can complete a task in about one second of thought, AI may be able to automate it</em> |
+
+<br>
+
+<style>
+.thick-borders table {
+  border-collapse: collapse;
+}
+.thick-borders td, .thick-borders th {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+.thick-borders td:last-child, .thick-borders th:last-child {
+  border-right: none !important;
+}
+.thick-borders tr:not(:last-child) td {
+  border-bottom: 3px solid #333 !important;
+}
+</style>
+
+::: thick-borders
+|  |  |
+|----|----|
+| **Why it works** | • Pattern recognition: AI learns from data like human intuition<br>• Low complexity: quick decisions are ideal for AI<br>• Automation potential: repetitive, structured tasks fit well |
+| **Examples** | • Object recognition in images<br>• Text prediction<br>• Document classification |
+| **When the rule breaks down** | • Deep reasoning required<br>• Ambiguity and subjectivity |
+:::
+
+## Considerations for LLMs
+
+<ul class="fragment" data-fragment-index="1">
+
+<li>
+
+Retrieval-augmented generation (RAG)
+
+<ul>
+
+<li>Combines an existing LLM with a custom knowledge base to provide up-to-date domain specific answers</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<ul class="fragment" data-fragment-index="2">
+
+<li>
+
+Fine-tuning pre-trained models
+
+<ul>
+
+<li>Requires less data and compute power than training from scratch</li>
+
+<li>Uses existing models that are fine-tuned on domain-specific data</li>
+
+</ul>
+
+</li>
+
+</ul>
