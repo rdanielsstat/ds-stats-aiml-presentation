@@ -9,6 +9,7 @@ format:
     includes:
       in_header: license-meta.html
 editor: visual
+output-file: index.html
 ---
 
 ## [Title slide]{style="display:none;"}
@@ -84,29 +85,38 @@ Morris et al. (2024). Current and future applications of artificial intelligence
 :::: {style="font-size: 0.7em; line-height: 1.2;"}
 **Simulation of human intelligence** in machines that are programmed to think, learn, and make decisions
 
+```{=html}
 <p class="fragment"; data-fragment-index="1">
   <strong>Artificial narrow intelligence (ANI)</strong><br>
   • “One-trick-pony” applications<br>
   • E.g., smart speaker, self-driving car, web search
 </p>
+```
+
+```{=html}
 <p class="fragment"; data-fragment-index="2">
   <strong>Generative AI</strong><br>
   • More general-purpose uses<br>
   • E.g., ChatGPT, Claude, Gemini, DeepSeek, DALL-E 2
 </p>
+```
 
 ::: {.fragment data-fragment-index="2" style="position: absolute; right: 3%; top: 30%; width: 30%; font-style: italic; font-size: 0.9em; background-color: #f5f5f5; padding: 7px; border-left: 3px solid #ccc; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);"}
 “You won’t lose your job to AI, but you may lose your job to someone who knows how to use AI”
 :::
 
 <p class="fragment" data-fragment-index="3">
+
 <strong>Agentic AI</strong><br> • More autonomous decisions/actions<br> • E.g., OpenAI’s Operator
+
 </p>
 
+```{=html}
 <p class="fragment"; data-fragment-index="4">
   <strong>Artificial general intelligence (AGI)</strong><br>
   • Anything a human can do
 </p>
+```
 ::::
 
 ::: {style="font-size: 0.4em; line-height: 1.1; margin-top: 0.5em; color: #555;"}
@@ -189,6 +199,7 @@ Convolutional neural network diagram created by Claude AI (Anthropic, 2025). <a 
 
 ## [Data science vs. statistics]{style="display:none;"} {.smaller}
 
+```{=html}
 <style>
 .compare {
   display: grid;
@@ -231,6 +242,7 @@ Convolutional neural network diagram created by Claude AI (Anthropic, 2025). <a 
 .cell ul { margin: 0; padding-left: 1.05rem; }
 .cell li { margin-bottom: 0.28rem; line-height: 1.2; }
 </style>
+```
 
 :::::::::::::: compare
 <!-- column headers -->
@@ -326,6 +338,7 @@ Problem-solving approach
 
 ## [Data science vs. statistics continued]{style="display:none;"} {.smaller}
 
+```{=html}
 <style>
 .compare {
   display: grid;
@@ -368,6 +381,7 @@ Problem-solving approach
 .cell ul { margin: 0; padding-left: 1.05rem; }
 .cell li { margin-bottom: 0.28rem; line-height: 1.2; }
 </style>
+```
 
 :::::::::::::: compare
 <!-- column headers -->
@@ -611,11 +625,12 @@ Can get started with MB, GB of data
 ## One second rule {.smaller}
 
 |  |  |
-|--------------------|----------------------------------------------------|
+|----|----|
 | **What is it?** | <em>If a human can complete a task in about one second of thought, AI may be able to automate it</em> |
 
 <br>
 
+```{=html}
 <style>
 .thick-borders table {
   border-collapse: collapse;
@@ -633,10 +648,11 @@ Can get started with MB, GB of data
   border-bottom: 3px solid #333 !important;
 }
 </style>
+```
 
 ::: thick-borders
 |  |  |
-|--------------------|---------------------------------------------------|
+|----|----|
 | **Why it works** | • Pattern recognition: AI learns from data like human intuition<br>• Low complexity: quick decisions are ideal for AI<br>• Automation potential: repetitive, structured tasks fit well |
 | **Examples** | • Object recognition in images<br>• Text prediction<br>• Document classification |
 | **When the rule breaks down** | • Deep reasoning required<br>• Ambiguity and subjectivity |
