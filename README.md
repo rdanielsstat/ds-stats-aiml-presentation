@@ -1,4 +1,4 @@
-# Data Science, Statistics & AI/ML Presentation
+# Data Science, Statistics, & AI/ML Presentation
 
 This repository contains a presentation created with **Quarto**, **R**, **Reveal.js**, and **HTML**.  
 It covers what **data science**, **statistics**, and **AI/machine learning** are, their **overlap**, and their **key differences**, particularly the differences between **machine learning models** and **statistical models**.
