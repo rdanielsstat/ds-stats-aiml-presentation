@@ -105,11 +105,11 @@ Morris et al. (2024). Current and future applications of artificial intelligence
 “You won’t lose your job to AI, but you may lose your job to someone who knows how to use AI”
 :::
 
+```{=html}
 <p class="fragment" data-fragment-index="3">
-
 <strong>Agentic AI</strong><br> • More autonomous decisions/actions<br> • E.g., OpenAI’s Operator
-
 </p>
+```
 
 ```{=html}
 <p class="fragment"; data-fragment-index="4">
@@ -625,7 +625,7 @@ Can get started with MB, GB of data
 ## One second rule {.smaller}
 
 |  |  |
-|----|----|
+|----------------------|--------------------------------------------------|
 | **What is it?** | <em>If a human can complete a task in about one second of thought, AI may be able to automate it</em> |
 
 <br>
@@ -652,7 +652,7 @@ Can get started with MB, GB of data
 
 ::: thick-borders
 |  |  |
-|----|----|
+|----------------------|--------------------------------------------------|
 | **Why it works** | • Pattern recognition: AI learns from data like human intuition<br>• Low complexity: quick decisions are ideal for AI<br>• Automation potential: repetitive, structured tasks fit well |
 | **Examples** | • Object recognition in images<br>• Text prediction<br>• Document classification |
 | **When the rule breaks down** | • Deep reasoning required<br>• Ambiguity and subjectivity |
