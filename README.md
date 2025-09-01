@@ -6,7 +6,7 @@ It covers what **data science**, **statistics**, and **AI/machine learning** are
 ---
 
 ## 🔗 View the Presentation
-👉 <a href="https://rdanielsstat.github.io/ds-stats-aiml-presentation/" target="_blank">Click here to open the slides</a>
+👉 <a href="https://rdanielsstat.github.io/ds-stats-aiml-presentation/">Click here to open the slides</a> (Right-click or Ctrl/Cmd + click to open in a new tab)
 
 ---
 
@@ -23,7 +23,7 @@ It covers what **data science**, **statistics**, and **AI/machine learning** are
 This presentation provides detailed information on:
 - Key concepts in **data science**, **statistics**, and **AI/machine learning**
 - Fundamental differences between **statistical models** and **machine learning models** (the most valuable part)
-- Types of neural networks, **RAG**, and fine-tuning methods
+- Types of neural networks, **RAG**, and fine-tuning
 - Methods for **data analysis** and **statistical modeling** in practice
 - How to create **professional, interactive slide decks** with Quarto and Reveal.js
 
