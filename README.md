@@ -6,7 +6,7 @@ It covers what **data science**, **statistics**, and **AI/machine learning** are
 ---
 
 ## 🔗 View the Presentation
-👉 [Click here to open the slides](https://rdanielsstat.github.io/ds-stats-aiml-presentation/)
+👉 <a href="https://rdanielsstat.github.io/ds-stats-aiml-presentation/" target="_blank">Click here to open the slides</a>
 
 ---
 

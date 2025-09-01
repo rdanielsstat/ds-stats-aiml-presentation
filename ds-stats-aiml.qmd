@@ -86,7 +86,7 @@ Morris et al. (2024). Current and future applications of artificial intelligence
 **Simulation of human intelligence** in machines that are programmed to think, learn, and make decisions
 
 ```{=html}
-<p class="fragment"; data-fragment-index="1">
+<p class="fragment" data-fragment-index="1">
   <strong>Artificial narrow intelligence (ANI)</strong><br>
   • “One-trick-pony” applications<br>
   • E.g., smart speaker, self-driving car, web search
@@ -94,7 +94,7 @@ Morris et al. (2024). Current and future applications of artificial intelligence
 ```
 
 ```{=html}
-<p class="fragment"; data-fragment-index="2">
+<p class="fragment" data-fragment-index="2">
   <strong>Generative AI</strong><br>
   • More general-purpose uses<br>
   • E.g., ChatGPT, Claude, Gemini, DeepSeek, DALL-E 2
@@ -112,7 +112,7 @@ Morris et al. (2024). Current and future applications of artificial intelligence
 ```
 
 ```{=html}
-<p class="fragment"; data-fragment-index="4">
+<p class="fragment" data-fragment-index="4">
   <strong>Artificial general intelligence (AGI)</strong><br>
   • Anything a human can do
 </p>
